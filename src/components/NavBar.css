@@ -1,0 +1,9 @@
+.Nav-Bar {
+  width: 500px;
+  background-color: #485460;
+}
+.Nav-Bar h1 {
+  font-size: 24px;
+  padding: 10px;
+  color: #d2dae2;
+}

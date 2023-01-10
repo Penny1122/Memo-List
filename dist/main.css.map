@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":";;;AAAA;EACE,YAAY;EACZ,WAAW;AACb","sources":["webpack://todo_list/./src/index.css"],"sourcesContent":["div {\r\n  width: 100px;\r\n  color: blue;\r\n}\r\n"],"names":[],"sourceRoot":""}
