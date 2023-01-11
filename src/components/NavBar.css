@@ -1,9 +1,23 @@
 .Nav-Bar {
   width: 500px;
   background-color: #485460;
+  display: flex;
 }
 .Nav-Bar h1 {
   font-size: 24px;
   padding: 10px;
+  color: #d2dae2;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.log-out {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-right: 20px;
+  font-size: 20px;
   color: #d2dae2;
 }
