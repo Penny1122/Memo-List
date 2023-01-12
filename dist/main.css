@@ -1,6 +1,3 @@
-/*!*****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
-  \*****************************************************************/
 * {
   box-sizing: border-box;
 }
@@ -13,9 +10,6 @@ body {
     sans-serif;
 }
 
-/*!*****************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/components/NavBar.css ***!
-  \*****************************************************************************/
 .Nav-Bar {
   width: 500px;
   background-color: #485460;
@@ -42,9 +36,6 @@ body {
   color: #d2dae2;
 }
 
-/*!********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/HomePage/index.css ***!
-  \********************************************************************************/
 .sign-box {
   width: 500px;
 }
@@ -97,9 +88,6 @@ form {
   justify-content: center;
 }
 
-/*!********************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/ListPage/index.css ***!
-  \********************************************************************************/
 .new-memo {
   font-size: 16px;
   color: #485460;
@@ -140,8 +128,8 @@ button:hover {
 }
 .note {
   background-color: #ffffff;
+  color: #485460;
   width: 100%;
-  /* height: 40px; */
   font-size: 15px;
   line-height: 40px;
   margin-right: 10px;
