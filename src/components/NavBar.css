@@ -7,12 +7,14 @@
   font-size: 24px;
   padding: 10px;
   color: #d2dae2;
+  margin-left: 30px;
 }
 .container {
   display: flex;
   justify-content: center;
 }
 .log-out {
+  cursor: pointer;
   flex: auto;
   display: flex;
   justify-content: flex-end;

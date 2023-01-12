@@ -7,7 +7,7 @@ import {
 } from "firebase/auth";
 import { auth } from "../../../utils/firebase";
 
-function SignIn() {
+const SignIn = () => {
   const navigate = useNavigate();
   const [activeItem, setActiveItem] = useState("signup");
   const [email, setEmail] = useState("");
@@ -17,7 +17,7 @@ function SignIn() {
     e.preventDefault();
     if (activeItem === "signup") {
       createUserWithEmailAndPassword(auth, email, password).then(() => {
-        navigate("/");
+        navigate("/list");
       });
     } else if (activeItem === "signin") {
       signInWithEmailAndPassword(auth, email, password).then(() => {
@@ -69,6 +69,6 @@ function SignIn() {
       </form>
     </div>
   );
-}
+};
 
 export default SignIn;
