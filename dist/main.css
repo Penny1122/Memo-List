@@ -19,27 +19,90 @@ body {
 .Nav-Bar {
   width: 500px;
   background-color: #485460;
+  display: flex;
 }
 .Nav-Bar h1 {
   font-size: 24px;
   padding: 10px;
+  color: #d2dae2;
+  margin-left: 30px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.log-out {
+  cursor: pointer;
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+  margin-right: 20px;
+  font-size: 20px;
   color: #d2dae2;
 }
 
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/HomePage/index.css ***!
   \********************************************************************************/
+.sign-box {
+  width: 500px;
+}
+
+.sign-button {
+  display: flex;
+  align-items: center;
+}
+.sign {
+  cursor: pointer;
+  border-style: solid;
+  border-color: rgba(72, 84, 96, 0.5);
+  border-radius: 10px;
+  margin: 5px 30px;
+  padding: 10px;
+  flex: 1;
+  font-size: 20px;
+  color: #485460;
+  font-weight: 700;
+  text-align: center;
+}
+.active {
+  color: #ffcccc;
+  background-color: rgba(72, 84, 96, 0.5);
+}
+form {
+  display: flex;
+  justify-content: center;
+}
+.sign-input {
+  outline: none;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #ffffff;
+  padding: 10px;
+  width: 250px;
+  margin: 10px;
+}
+.sign-input:focus {
+  border-style: solid;
+  border-color: #485460;
+}
+.sign-button-block {
+  display: flex;
+  justify-content: center;
+}
+.click-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
 
 /*!********************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/pages/ListPage/index.css ***!
   \********************************************************************************/
-.container {
-  display: flex;
-  justify-content: center;
-}
 .new-memo {
   font-size: 16px;
-  color: #1e272e;
+  color: #485460;
   margin: 10px;
   font-weight: bold;
 }
