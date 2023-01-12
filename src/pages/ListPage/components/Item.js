@@ -1,7 +1,22 @@
 import React from "react";
+import {
+  doc,
+  deleteDoc,
+  query,
+  where,
+  collection,
+  getDocs,
+} from "firebase/firestore";
+import { db } from "../../../utils/firebase";
 
 const Item = ({ id, note, deleteContent }) => {
-  function deleteItem() {
+  async function deleteItem() {
+    const q = query(collection(db, "memo"), where("id", "==", id));
+    const querySnapshot = await getDocs(q);
+    querySnapshot.forEach(async (doc) => {
+      deleteDoc(doc.ref);
+    });
+
     deleteContent(function (prev) {
       return prev.filter((item) => item.id !== id);
     });
