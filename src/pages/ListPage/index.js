@@ -21,7 +21,7 @@ const ListPage = ({ user }) => {
         return [
           ...prevContent,
           {
-            id: data.id,
+            id: doc.id,
             note: data.note,
           },
         ];

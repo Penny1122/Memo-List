@@ -14,25 +14,24 @@ const AddForm = ({ add, user }) => {
   async function addItem() {
     const data = {
       userID: user.uid,
-      id: v4(),
+      // id: v4(),
       note: note,
     };
     try {
       const docRef = await addDoc(collection(db, "memo"), data);
       console.log("Document written with ID: ", docRef.id);
+      add(function (prevContent) {
+        return [
+          ...prevContent,
+          {
+            id: docRef.id,
+            note: data.note,
+          },
+        ];
+      });
     } catch (e) {
       console.error("Error adding document: ", e);
     }
-
-    add(function (prevContent) {
-      return [
-        ...prevContent,
-        {
-          id: data.id,
-          note: data.note,
-        },
-      ];
-    });
   }
 
   return (
